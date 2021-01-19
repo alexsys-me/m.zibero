@@ -9004,6 +9004,22 @@ h4.accordion-header {
     padding-top: 50px;
 }
 
+.searchpane .select-wrapper {
+    margin-top: 20px;
+}
+
+.searchpanel .search-submit {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #E3E3E3;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fafaff;
+    background: #5659a7;
+    position: absolute;
+    margin-left: -50px;
+}
+
 .searchpanel .search-field {
     border: 1px solid #E3E3E3;
     box-sizing: border-box;
