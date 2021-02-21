@@ -12,7 +12,7 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/owl.transitions.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+
 </head>
 
 <body>
@@ -1229,124 +1229,15 @@
     <!-- Body END  -->
 
 
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/init.js"></script>
     <script src="js/simpleAccordion.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.mainmenu').sidenav({
-                menuWidth: 414
-            });
-
-            $('.shoppanel').sidenav({
-                edge: 'right'
-            });
-
-            $('.searchpanel').sidenav({
-                edge: 'right',
-                draggable: 'false'
-            });
-            $('.accordion-group').simpleAccordion({
-                multiple: false, // возможность открытия одной вкладки или всех
-                speedOpen: 300, // скорость открытия вкладки
-                speedClose: 300, // скорость закрытия вкладки
-                easingOpen: false, // эффект плавности открытия вкладки
-                //easingClose: null, // эффект плавности закрытия вкладки
-                headClass: 'accordion-header', // класс для заголовка вкладки
-                bodyClass: 'accordion-body', // класс для тела вкладки
-                //openClass: 'open', // класс для открытой вкладки, применяется к accordion-header
-                // defaultOpenClass: 'default-open', // класс для открытой вкладки по умолчанию
-                // cbClose: null, // callback-функция при закрытии вкладки - function (e, $this) {},
-                // cbOpen: null // callback-функция при открытии вкладки - function (e, $this) {}
-
-            });
-            // Главный банер ----------------
-            $('.slider').carousel({
-                indicators: true,
-                //dist:0,
-                numVisible: 1,
-                fullWidth: true,
-                shift: 0,
-                padding: 50
-
-            });
-            $('.collapsible').collapsible();
-            // Стилизация форм ----------------
-            $('select').formSelect();
-            $('.dropdown-trigger').dropdown();
-            // Модальные окна ----------------
-            $('.modal').modal();
-            $('.pre-tabs').tabs();
-
-            // С этим товаром покупают ----------------
-            var carouselsee = $(".seelater");
-            carouselsee.owlCarousel({
-                items: 1,
-                itemsMobile: [420, 1],
-                loop: true,
-                autoplay: true,
-                indicators: true
-            });
-            // Аккордион в карточке----------------
-            $('.expand').collapsible({
-                accordion: false
-            });
-            // Карусель товаров ----------------
-
-            var carousel = $(".scase1");
-            carousel.owlCarousel({
-                items: 1,
-                itemsMobile: [420, 1],
-                loop: true,
-                autoplay: true,
-                indicators: true
-
-            });
 
 
-            var carousel2 = $(".snew");
-            carousel2.owlCarousel({
-                items: 1,
-                itemsMobile: [420, 1],
-                loop: true,
-                autoplay: true,
-                indicators: true
-            });
 
-            //------------------------------------------
-            var carousel3 = $(".scase3");
-            carousel3.owlCarousel({
-                items: 1,
-                itemsMobile: [420, 1],
-                loop: true,
-                autoplay: true,
-                indicators: true
-            });
-
-            //------------------------------------------
-            var carousel3 = $(".eshop");
-            carousel3.owlCarousel({
-                items: 1,
-                itemsMobile: [480, 1],
-                loop: true,
-                autoplay: true,
-                indicators: true
-            });
-
-            //------------------------------------------
-            var carousel3 = $(".brands");
-            carousel3.owlCarousel({
-                items: 3,
-                itemsMobile: [420, 3],
-                loop: true,
-                autoplay: true
-            });
-
-        });
-    </script>
 </body>
 
 </html>
