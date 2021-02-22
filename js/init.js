@@ -1,30 +1,5 @@
 $(document).ready(function() {
-    $('.mainmenu').sidenav({
-        menuWidth: 414
-    });
 
-    $('.shoppanel').sidenav({
-        edge: 'right'
-    });
-
-    $('.searchpanel').sidenav({
-        edge: 'right',
-        draggable: 'false'
-    });
-    $('.accordion-group').simpleAccordion({
-        multiple: false, // возможность открытия одной вкладки или всех
-        speedOpen: 300, // скорость открытия вкладки
-        speedClose: 300, // скорость закрытия вкладки
-        easingOpen: false, // эффект плавности открытия вкладки
-        //easingClose: null, // эффект плавности закрытия вкладки
-        headClass: 'accordion-header', // класс для заголовка вкладки
-        bodyClass: 'accordion-body', // класс для тела вкладки
-        //openClass: 'open', // класс для открытой вкладки, применяется к accordion-header
-        // defaultOpenClass: 'default-open', // класс для открытой вкладки по умолчанию
-        // cbClose: null, // callback-функция при закрытии вкладки - function (e, $this) {},
-        // cbOpen: null // callback-функция при открытии вкладки - function (e, $this) {}
-
-    });
     // SWICHMENU ----------------
     $(".menu-triger").click(function() {
         $(".main-menu").slideToggle(200);
@@ -98,11 +73,7 @@ $(document).ready(function() {
     //  ----------------
     var carouselsee = $(".seelater");
     carouselsee.owlCarousel({
-        itemsDesktop: 4,
-        itemsDesktop: [1900, 4],
-        itemsDesktopSmall: [1000, 3],
-        itemsTablet: false,
-        itemsMobile: [375, 2]
+        items: 4
     });
     $('.seelater-prev').click(function() {
         carouselsee.trigger('owl.prev');
@@ -126,9 +97,8 @@ $(document).ready(function() {
     //  ----------------
     var carousel = $(".blog-our");
     carousel.owlCarousel({
-        itemsDesktop: 4,
-        itemsDesktop: [1920, 4],
-        itemsMobile: [480, 2],
+        items: 2
+
 
     });
     $('.blog-our-prev').click(function() {
@@ -193,6 +163,7 @@ $(document).ready(function() {
         carousel3.trigger('owl.next');
         return false;
     });
+
     //------------------------------------------
     var carousel3 = $(".kategory");
     carousel3.owlCarousel({

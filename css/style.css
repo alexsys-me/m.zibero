@@ -611,7 +611,6 @@ input:hover {
         border: none!important;
         margin: 15px 0;
         padding-top: 10px!important;
-        background: #f3f2f2;
     }
     body .basket-string .row-string .special-sum {
         margin-left: 20px;
@@ -620,11 +619,6 @@ input:hover {
     body .basket-string .row-string .total-summ {
         flex: 40%;
         max-width: 45%;
-    }
-    body .basket-string .row-string .total-summ:before {
-        content: '�����';
-        width: 100%;
-        color: #949494;
     }
     body .basket-string .total {
         flex-wrap: wrap;
@@ -3455,6 +3449,10 @@ a.wp:before {
     position: relative;
 }
 
+.our_geo .seelater {
+    margin-top: 50px;
+}
+
 .seelater .cardware {
     border: 1px solid #fff;
 }
@@ -4011,6 +4009,7 @@ a.fg>span:before {
     padding: 20px 0;
     box-sizing: border-box;
     height: 108px;
+    box-shadow: 0 6px 6px #e4e4e4;
 }
 
 .search-wrap {
@@ -5316,12 +5315,9 @@ header .select-wrapper .caret {
     margin-bottom: 20px;
 }
 
-.basket-shop {
-    padding-right: 30px;
-}
-
 .s3 .more-data {
     border: 1px solid #e8e8e8;
+    display: none;
     box-shadow: 0 0 20px rgba(204, 204, 204, 0.3);
     margin-left: 20px;
 }
@@ -5420,14 +5416,18 @@ header .select-wrapper .caret {
 
 .special .small-text {
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: left;
 }
 
 .special .small-text+p {
     display: inline-block;
     color: #ff4541;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 20px;
+    max-width: 100%;
+    text-align: left;
+    width: 100%;
 }
 
 .promocode .prom form input[type="text"] {
@@ -5443,7 +5443,6 @@ header .select-wrapper .caret {
 }
 
 .special a {
-    float: right;
     border-radius: 4px;
     padding: 10px 20px;
     color: #fff;
@@ -5452,6 +5451,8 @@ header .select-wrapper .caret {
     height: 30px;
     font-size: 13px;
     margin-left: 15px;
+    width: 80%;
+    text-align: center;
 }
 
 .special a:hover {
@@ -6196,10 +6197,8 @@ header .select-wrapper .caret {
 }
 
 .component {
-    padding-top: 0px;
-    margin-bottom: -8px;
+    padding-top: 20px;
     position: relative;
-    padding-bottom: 100px;
     z-index: 90;
 }
 
@@ -6249,6 +6248,7 @@ header .select-wrapper .caret {
     padding: 5px 0;
     margin-bottom: 30px;
     margin-top: 30px;
+    display: none;
 }
 
 .breadcrum ul {
@@ -7681,6 +7681,7 @@ a.tarif:before {
     margin: auto;
     width: 100%;
     max-width: 1300px;
+    padding-left: 20px;
 }
 
 .title-component .tech {
@@ -9182,25 +9183,27 @@ input[type=submit].modal-close {
 .our_better_wrapper {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .our_better_item {
-    text-align: сenter;
-    flex: 20%;
+    text-align: center;
+    flex: 45%;
     color: #5C5D78;
-    max-width: 20%;
+    max-width: 48%;
+    margin-bottom: 20px;
 }
 
 .our_better_item h4 {
     font-weight: 900;
-    font-size: 46px;
+    font-size: 30px;
     line-height: 150%;
 }
 
 .our_better_item p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     line-height: 130%;
 }
@@ -9208,7 +9211,7 @@ input[type=submit].modal-close {
 .our_better_img {
     position: relative;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .our_better_img img {
@@ -9231,6 +9234,21 @@ input[type=submit].modal-close {
 
 .dostavaka_photo {
     position: relative;
+    height: 200px;
+}
+
+.dostavaka_photo img {
+    height: 100%;
+}
+
+.component h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 10px;
 }
 
 .dostavaka_photo h1 {
@@ -9240,13 +9258,13 @@ input[type=submit].modal-close {
     font-size: 32px;
     line-height: 140%;
     position: absolute;
-    left: 45%;
+    left: 15%;
     top: 20%;
 }
 
 .dostavaka_photo strong {
     font-weight: 900;
-    font-size: 70px;
+    font-size: 34px;
     line-height: 98.5%;
     display: block;
     max-width: 360px;
@@ -9259,11 +9277,15 @@ input[type=submit].modal-close {
 .our_better_icons-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .our_better_icons-item {
-    text-align: center;
+    text-align: left;
+    flex: 49%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .our_better_icons-item img {
@@ -9274,7 +9296,7 @@ input[type=submit].modal-close {
 .our_better_icons-item p {
     font-size: 18px;
     line-height: 120%;
-    text-align: center;
+    text-align: left;
     color: #5C5D78;
     max-width: 250px;
 }
@@ -9287,7 +9309,7 @@ input[type=submit].modal-close {
 
 .our_better_icons-item span {
     display: block;
-    text-align: center;
+    text-align: left;
     color: #8586A3;
     font-weight: normal;
     font-size: 19px;
@@ -9304,7 +9326,7 @@ input[type=submit].modal-close {
 }
 
 .search-dostavka {
-    max-width: 850px;
+    max-width: 90%;
     margin: auto;
     position: relative;
     margin-bottom: 50px;
@@ -9324,7 +9346,11 @@ input[type=submit].modal-close {
     border-radius: 5px;
     max-width: 150px;
     margin: 0;
-    height: 150px;
+    height: 140px;
+    flex: 1;
+    width: 205px;
+    min-width: 120px;
+    margin-right: 10px;
 }
 
 .icon-tab .indicator {
@@ -9391,6 +9417,7 @@ input[type=submit].modal-close {
     max-width: 890px;
     margin: auto;
     width: 100%;
+    overflow-x: scroll;
 }
 
 .time-devilery {
@@ -9434,11 +9461,11 @@ input[type=submit].modal-close {
     position: relative;
     z-index: 10;
     box-sizing: border-box;
-    padding: 45px 90px;
+    padding: 45px 40px 30px;
 }
 
 .right_devilery p {
-    flex: 40%;
+    flex: 100%;
     color: #5C5D78;
     line-height: 140%;
     font-size: 17px;
@@ -9452,6 +9479,7 @@ input[type=submit].modal-close {
 .single-table {
     display: flex;
     flex-wrap: wrap;
+    min-width: 800px;
     width: 100%;
 }
 
@@ -9865,4 +9893,607 @@ input[type=submit].modal-close {
     color: #7c7fb4;
     font-size: 32px;
     font-weight: 500;
+}
+
+.supertitle {
+    color: #474D9B!important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    flex: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: #5C5D78;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 47px;
+    margin-top: 40px!important;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.our_numbers {
+    background: rgba(219, 223, 240, 0.57);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.our_numbers .num_block {
+    color: #5C5D78;
+    font-weight: 900;
+    font-size: 32px;
+    flex: 45%;
+    line-height: 150%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.our_numbers .num_block span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48%;
+}
+
+.our_adwards,
+.our_geo {
+    max-width: 100%;
+}
+
+h1.maintitle {
+    color: #8C8C9B;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: left;
+    flex: 100%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+h1.maintitle span {
+    display: block;
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.contakt_block.big_block {
+    flex: 40%;
+}
+
+.contakt_block.violet img {
+    bottom: 0;
+}
+
+.contakt_panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contakt_block.violet {
+    background: radial-gradient(64.68% 64.68% at 54.2% 49.81%, #685CA3 0%, #50477C 100%);
+    padding-left: 30px;
+    max-width: 100%;
+    flex: 100%;
+}
+
+.contakt_block.violet p {
+    color: #ffffffad;
+    max-width: 250px;
+}
+
+.contakt_block.violet h4 {
+    color: #ffffff;
+}
+
+.contakt_block .soc_blok {
+    width: 200px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.contakt_block.violet .btn {
+    border: 1px solid #b0aacb;
+    border-radius: 6px;
+    color: #fff;
+    left: 0;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.contakt_block.violet .btn:hover {
+    text-decoration: none;
+    background: #413775;
+}
+
+.contakt_block .soc_blok a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-right: 10px;
+    bottom: auto;
+    left: 0;
+    opacity: 0.5;
+}
+
+.contakt_block .soc_blok a:hover {
+    opacity: 1;
+}
+
+.contakt_block {
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 50px rgb(0 0 0 / 4%);
+    border-radius: 6px;
+    height: 270px;
+    flex: 20%;
+    padding: 20px 10px;
+    position: relative;
+    margin: 0 5px;
+    margin-bottom: 20px;
+}
+
+.contakt_block img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.contakt_block h4 {
+    color: #7C7C8E;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+}
+
+.contakt_block a {
+    color: #474D9B;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: block;
+}
+
+.contakt_block a:hover {
+    color: #636ac1;
+    text-decoration: underline;
+}
+
+.contakt_block p {
+    color: #7C7C8E;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.contakt_block span {
+    color: #A6A6B2;
+    font-size: 16px;
+    line-height: 19px;
+    color: #262640;
+}
+
+.answer_page {
+    padding-top: 30px;
+}
+
+.answer_page .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #585858;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.answer_page ol li,
+.answer_page ul li {
+    color: #7C7C8E;
+    max-width: 1000px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+
+.search-faq {
+    margin-top: -10px;
+}
+
+.search-faq form {
+    display: flex;
+}
+
+.search-faq input[type=text] {
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.04);
+    height: 50px;
+    flex: 100%;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.search-faq input[type=submit] {
+    overflow: hidden;
+    text-indent: -1000px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin-left: -59px;
+    margin-right: 10px;
+    background: transparent url(../images/search.png) no-repeat center center;
+}
+
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questions>li {
+    margin-bottom: 5px;
+}
+
+.faq .rightcol {
+    min-width: 340px;
+    padding-right: 30px;
+}
+
+.questions .collapsible-header {
+    background: #F7F7FC;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #585858;
+    padding-left: 20px;
+}
+
+.questions .collapsible-body {
+    padding: 1rem;
+}
+
+.questions .collapsible-body ul {
+    padding: 0!important;
+}
+
+.questions .collapsible-body ul li {
+    text-align: left;
+}
+
+.questions .collapsible-body ul li a {
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.questions .collapsible-body ul li a:hover {
+    text-decoration: underline;
+}
+
+.gift-frame {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.gift-frame img {
+    position: absolute;
+    left: 30%;
+    overflow: hidden;
+    top: 20%;
+}
+
+.gift-frame:before {
+    content: url('../images/pngwing.png');
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -20%;
+    z-index: 10;
+}
+
+.whiteform {
+    background: #fff;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 0.15);
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+.whiteform input,
+.whiteform textarea {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #E3E3E3;
+    font-family: roboto;
+    height: 60px;
+    padding-left: 20px;
+    color: #5A5858;
+}
+
+.whiteform textarea {
+    height: 150px;
+}
+
+.whiteform .blue {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 0px;
+}
+
+.whiteform label {
+    color: #5A5858;
+    font-size: 16px;
+}
+
+.whiteform .subchek {
+    padding-left: 30px;
+}
+
+.whiteform .subchek i {
+    color: #ADADAD;
+    display: block;
+    font-size: 12px;
+}
+
+.send-gift h4 {
+    text-align: left;
+    color: #7C7C8E;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.send-gift h4 span {
+    font-size: 15px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.addgift {
+    width: 100%;
+    text-align: center;
+    color: #7C7C8E;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.addgift:hover {
+    text-decoration: underline;
+}
+
+.chektab {
+    display: flex;
+}
+
+.chektab .tabutton {
+    border: 1px solid #D4DAEE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 150px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    width: 145px;
+    height: 135px;
+}
+
+.chektab .tabutton:hover {
+    background: #F8F9FD;
+}
+
+.chektab .tabutton:hover p {
+    opacity: 1;
+    transition: .2s;
+}
+
+.chektab .tabutton p {
+    color: #7C7C8E;
+    background: #fff;
+    box-shadow: 0px 0px 20px #d6d6d6;
+    border: 1px solid #E3E3E3;
+    position: absolute;
+    padding: 15px;
+    line-height: 120%;
+    font-size: 12px;
+    width: 250px;
+    border-radius: 5px;
+    z-index: 999;
+    top: -90%;
+    left: -40%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.chektab .tabutton p:before {
+    content: '';
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: -7px;
+    transform: rotate(-45deg);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.chektab .tabutton input:checked+span {
+    background: #E2E7FA;
+}
+
+.chektab .tabutton span {
+    padding: 0;
+    color: #9CA9DC;
+    text-align: left;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 90px 15px 20px 15px;
+}
+
+.chektab .tabutton input {
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+}
+
+.chektab .tabutton span:before,
+.chektab .tabutton span:after {
+    display: none;
+}
+
+.chektab .tabutton img {
+    margin: 20px auto 10px;
+    position: relative;
+    z-index: 25;
+}
+
+.summary {
+    border-top: 1px solid #D4DAEE;
+    border-bottom: 1px solid #D4DAEE;
+    margin: 40px 0;
+    padding: 40px 0 10px;
+}
+
+.summary .row {
+    flex: 100%;
+    color: #5B5B72;
+    overflow: visible;
+    justify-content: flex-start;
+    overflow: visible;
+}
+
+.summary .row p {
+    color: #5B5B72;
+    flex: 150px;
+    max-width: 150px;
+}
+
+.summary .row p strong {
+    font-size: 26px;
+}
+
+.intheend {
+    justify-content: flex-start;
+}
+
+.summary .row .fb-price {
+    margin-top: -30px;
+}
+
+.fb-price {
+    color: #FE3441;
+    border: 2px dashed #FE3441;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+
+.fb-price i {
+    font-size: 14px;
+    display: block;
+    font-weight: 400;
+}
+
+.intheend label {
+    width: 100%;
+    color: #5A5858;
+    margin-bottom: 5px;
+}
+
+.intheend label a {
+    color: #474D9B;
+    font-weight: bold;
+}
+
+.intheend .btn {
+    margin: 0;
+    height: 60px;
+    width: 260px;
+    margin-top: 20px;
+}
+
+.intheend .arrow {}
+
+.intheend .clock {
+    background: transparent;
+    border: 1px solid #474D9B;
+    margin-left: 20px;
+    border-radius: 6px;
+    color: #878BC8;
+    font-weight: 600;
+}
+
+.intheend .clock:hover {
+    background: #E2E7FA
+}
+
+.basket-string .table-head {
+    background: #e8e8e8;
+    color: #9D9D9D;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+.basket-shop .basket-string .table .row-string .des i {
+    font-size: 12px;
+    color: #9495A3;
+    display: block;
+    line-height: 10px;
 }
