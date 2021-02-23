@@ -167,10 +167,8 @@ $(document).ready(function() {
     //------------------------------------------
     var carousel3 = $(".kategory");
     carousel3.owlCarousel({
-        itemsDesktop: 8,
-        itemsDesktop: [1920, 8],
-        itemsDesktopSmall: [1400, 9],
-        itemsMobile: [420, 2]
+
+        itemsMobile: [420, 3]
     });
     $('.scase3-prev').click(function() {
         carousel3.trigger('owl.prev');
@@ -199,10 +197,9 @@ $(document).ready(function() {
     //------------------------------------------
     var carousel3 = $(".brands");
     carousel3.owlCarousel({
-        itemsDesktop: 8,
-        itemsDesktop: [1920, 8],
-        itemsDesktopSmall: [1400, 5],
-        itemsMobile: [420, 1]
+
+
+        itemsMobile: [420, 3]
     });
 });
 

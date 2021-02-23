@@ -489,7 +489,7 @@ input:hover {
 @media (max-width: 768px) {
     .rightcol .close {
         position: absolute;
-        right: 55px;
+        right: 25px;
         opacity: .5;
         top: 15px;
         width: 20px;
@@ -1082,10 +1082,6 @@ form textarea {
     max-width: 500px;
 }
 
-.component.maincat {
-    padding-bottom: 100px;
-}
-
 .component.row.wrapper {
     flex-wrap: nowrap;
     overflow: visible;
@@ -1566,8 +1562,7 @@ input[type=file] {
 }
 
 .catalog-menu .collapsible {
-    border-radius: 6px;
-    border: 1px solid #ddd;
+    border: none;
     box-sizing: border-box;
     padding: 20px;
     margin-top: 30px;
@@ -1576,6 +1571,7 @@ input[type=file] {
 .catalog-menu .collapsible .mainlink {
     font-weight: bold;
     padding-bottom: 10px;
+    font-size: 18px;
     color: #4a4d97;
     display: block;
 }
@@ -3570,14 +3566,16 @@ a.wp:before {
 }
 
 .allshop.grey h4 {
-    color: #8e8e9c;
+    color: #3f3f5f;
     padding-bottom: 0px;
     text-transform: uppercase;
     font-weight: 900;
+    font-size: 30px;
 }
 
 .company-title {
     width: 100%;
+    padding-left: 30px;
 }
 
 .company-title h4 {
@@ -3629,7 +3627,16 @@ a.wp:before {
 }
 
 .kategory .carousel-element {
-    text-align: left;
+    background: #fff;
+    border-radius: 3px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.kategory .carousel-element p {
+    margin-bottom: 10px;
+    white-space: normal;
 }
 
 .kategory a {
@@ -4009,7 +4016,7 @@ a.fg>span:before {
     padding: 20px 0;
     box-sizing: border-box;
     height: 108px;
-    box-shadow: 0 6px 6px #e4e4e4;
+    box-shadow: 0 6px 6px #1b1b1b47;
 }
 
 .search-wrap {
@@ -6433,10 +6440,6 @@ header .select-wrapper .caret {
 .sp img {
     width: 100%;
     height: auto;
-}
-
-.component.s9 {
-    padding-bottom: 60px;
 }
 
 .fb:before {
@@ -9804,8 +9807,6 @@ input[type=submit].modal-close {
     font-size: 26px;
     color: #4a4d97;
 }
-
-.grafbg .collapsible {}
 
 .populartovar {
     width: 100%;
