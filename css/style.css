@@ -453,7 +453,7 @@ input:hover {
     .g4 .col,
     .g3 .col {
         flex: 100%!important;
-        max-width: 100%!important;
+        max-width: 48%!important;
     }
 }
 
@@ -505,8 +505,8 @@ input:hover {
         display: block;
         border: 1px solid #606060;
         position: absolute;
-        top: 18px;
-        right: 10px;
+        top: -8px;
+        right: 22px;
         margin-left: -3px;
         background: url(../images/filtr-ico.png) no-repeat center center;
         opacity: .5;
@@ -1647,7 +1647,6 @@ input[type=file] {
     padding-bottom: 0px!important;
     margin-bottom: 30px!important;
     min-height: 200px;
-    max-width: 270px!important;
 }
 
 .see .carwind {
@@ -3481,12 +3480,6 @@ a.wp:before {
     color: #5659a7;
 }
 
-.cardware:hover .add {
-    opacity: 1!important;
-    transition: .4s;
-    bottom: 10px!important;
-}
-
 .cardware p {
     color: #3e4146;
     font-size: 14px;
@@ -4975,13 +4968,9 @@ header .select-wrapper .caret {
     margin-bottom: 20px;
 }
 
-.component .cardware {
-    max-height: 300px;
-}
-
 .cardware.premium {
     flex: 50%;
-    max-width: 50%;
+    max-width: 100%!important;
 }
 
 .cardware.premium .img-wrapper {
@@ -5752,11 +5741,9 @@ header .select-wrapper .caret {
 }
 
 .filtr {
-    border-radius: 6px;
-    border: 1px solid #e0e0e0;
     margin: 15px;
     margin-bottom: 50px;
-    margin-top: 0px;
+    margin-top: -18px;
     background: #fff;
     margin-left: 0px;
 }
@@ -5818,7 +5805,7 @@ header .select-wrapper .caret {
 .filtr .collapsible .collapsible-header {
     font-weight: 600;
     padding: 10px 2px 4px 20px;
-    font-size: 14px;
+    font-size: 17px;
     color: #2e2e31;
     border-top: 1px solid #ddd;
 }
@@ -5887,7 +5874,7 @@ header .select-wrapper .caret {
 
 .filtr label span {
     color: #a3a2a2;
-    font-size: 12px!important;
+    font-size: 14px!important;
     font-weight: 300;
 }
 
@@ -6213,8 +6200,8 @@ header .select-wrapper .caret {
     margin-top: -90px;
 }
 
-.see.showcase {
-    margin-top: 50px;
+2 {
+    margin-top: 20px;
 }
 
 .see.showcase .navigate {
@@ -6422,7 +6409,7 @@ header .select-wrapper .caret {
 .rightcol ul li a {
     color: #5e5f6e;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 30px;
 }
 
@@ -7215,7 +7202,6 @@ header+.company-data {
 
 .cardware .img-wrapper {
     overflow: hidden;
-    height: 180px;
     margin-bottom: 15px;
 }
 
@@ -7305,13 +7291,12 @@ header+.company-data {
 }
 
 .cardware .add {
-    opacity: 0;
     width: 90%;
-    bottom: -40px;
-    position: absolute;
     display: flex;
     background: #fff;
     left: 10px;
+    margin: auto;
+    margin-bottom: 10px;
     transition: .2s;
 }
 
@@ -9720,7 +9705,6 @@ input[type=submit].modal-close {
 }
 
 .premium {
-    background: url(../images/betterbg.jpg) no-repeat;
     padding: 90px 0;
 }
 
@@ -9741,7 +9725,7 @@ input[type=submit].modal-close {
     color: #fff;
     font-size: 18px;
     margin-bottom: 40px;
-    margin-left: 80px;
+    margin-left: 0px;
     opacity: 0.7;
 }
 
