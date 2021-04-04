@@ -8808,7 +8808,8 @@ h4.accordion-header {
     padding-left: 40px;
 }
 
-.accordion-header {
+.accordion-header,
+.accordion-header a {
     margin: 3px 0;
     font-weight: 500;
     font-size: 18px;
