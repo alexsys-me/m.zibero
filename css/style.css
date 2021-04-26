@@ -506,7 +506,7 @@ input:hover {
         display: block;
         border: 1px solid #606060;
         position: absolute;
-        top: -8px;
+        top: 35px;
         right: 22px;
         margin-left: -3px;
         background: url(../images/filtr-ico.png) no-repeat center center;
@@ -941,9 +941,6 @@ input:hover {
         margin-left: 10px;
         width: 100%;
         margin-bottom: 0;
-    }
-    .cardware img {
-        width: 50%!important;
     }
     .modal {
         top: 5%!important;
@@ -3702,9 +3699,9 @@ a.wp:before {
 
 .cardware p {
     color: #3e4146;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 16px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     padding: 0 20px;
 }
@@ -5964,7 +5961,7 @@ header .select-wrapper .caret {
 .filtr {
     margin: 15px;
     margin-bottom: 50px;
-    margin-top: -18px;
+    margin-top: 10px;
     background: #fff;
     margin-left: 0px;
 }
@@ -7122,8 +7119,6 @@ header .select-wrapper .caret {
     width: 100%;
 }
 
-.banner .navigate .prew.arr {}
-
 .banner .navigate .arr:hover {
     background-color: rgba(255, 255, 255, 0.3) !important;
 }
@@ -7309,8 +7304,6 @@ header+.company-data {
 .showcase {
     width: 100%;
 }
-
-.component .showcase h4 {}
 
 .showcase h4:before {
     margin-left: -60px;
@@ -9851,17 +9844,18 @@ input[type=submit].modal-close {
 
 .landheader {
     background: url(../images/landhead.jpg) no-repeat;
-    height: 520px;
+    height: 250px;
 }
 
 .landheader h1 {
     color: #fff;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
+    padding-left: 12px;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 49px;
     text-align: left;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .landheader h1 span {
@@ -9872,8 +9866,6 @@ input[type=submit].modal-close {
 .counting .wrapper {
     justify-content: space-between;
 }
-
-.betters {}
 
 .counting {
     padding-top: 70px
@@ -9912,8 +9904,6 @@ input[type=submit].modal-close {
     line-height: 24px;
     color: #a6a6b3;
 }
-
-.counting a {}
 
 .gotocatalog .wrapper {
     margin: 100px auto;

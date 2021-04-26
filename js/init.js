@@ -16,6 +16,10 @@ $(document).ready(function() {
         $(".rightcol").toggle(200);
     });
 
+    $(".a-toogle").click(function() {
+        $(".left-col").toggle(200);
+    });
+
     // TABS ----------------
     $('.tabsauth').tabs();
     $('.pre-tabs').tabs();
