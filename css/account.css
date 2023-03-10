@@ -106,7 +106,11 @@
     position: relative;
     padding-bottom: 50px;
 }
-
+.content{max-width: 480px}
+body {
+  
+    max-width: 480px;
+}
 .content .left-col {
     width: 100%;
     display: none;
