@@ -102,7 +102,7 @@
 }
 
 .content .center-col {
-    flex: 1;
+    flex: 1;max-width: 100%;
     position: relative;
     padding-bottom: 50px;
 }
