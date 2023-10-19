@@ -9234,7 +9234,7 @@ a.tarif:before {
 
 h4.accordion-header {
     color: #5659a7!important;
-    padding-left: 40px;
+    padding-left: -2px;
 }
 
 .accordion-header,
@@ -9246,16 +9246,16 @@ h4.accordion-header {
     text-align: left;
     text-transform: none;
     color: rgba(0, 0, 0, 0.63);
-    padding: 12px 0px 12px 27px;
+    width: 100%;
     cursor: pointer;
     box-sizing: border-box;
     position: relative;
     display: flex;
     justify-content: flex-start;
-    border-bottom: 1px solid #dadada;
+   
     position: relative;
 }
-
+.accordion-header h3 a{    padding: 12px 0px 12px 20px; border-bottom: 1px solid #dadada;}
 .accordion-header span {
     color: #FFCB26;
     background: #474D9B;
@@ -9275,7 +9275,7 @@ h4.accordion-header {
     color: #b3b1b1;
     position: absolute;
 }
-
+h4.accordion-header:after{margin-top: 13px;}
 .accordion-header:before {
     content: "";
     display: block;
