@@ -524,7 +524,7 @@ input:hover {
        
     }
     body .breadcrum {
-        padding: 10px 0;
+        padding: 10px 0;overflow-x: scroll;
     }
     body .main-menu {
         display: none;
@@ -589,8 +589,8 @@ input:hover {
     }
     body .basket-string .row-string .count,
     body .basket-string .row-string .total-summ {
-        flex: 40%;
-        max-width: 45%;
+        flex: 70%;
+        max-width: 70%;
     }
     body .basket-string .total {
         flex-wrap: wrap;
@@ -2424,7 +2424,7 @@ header .search .select-wrapper .dropdown-content li span {
 
 .dosa {
     position: relative;
-    cursor: pointer;
+    cursor: pointer;    max-width: 47%;
     padding: 10px 20px 7px 10px;
     max-width: 53%;
     margin-right: 10px;
@@ -2668,7 +2668,7 @@ header .search .select-wrapper .dropdown-content li span {
 }
 
 .item-card .right-col .info-product .club-card span {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .item-card .right-col .info-product .row {
@@ -2963,8 +2963,9 @@ header .search .select-wrapper .dropdown-content li span {
     line-height: 130%;
 }
 
-
-
+.descript .card-title  {width: 100%;}
+.item-card .descript>div{display: flex; justify-content: space-between;
+    flex-wrap: wrap;}
 .user-description .reviews-user .title .clear {
     border: 1px solid #9F9FB9;
     border-radius: 3px;
@@ -2973,7 +2974,8 @@ header .search .select-wrapper .dropdown-content li span {
     white-space: nowrap;
     line-height: 37px;
 }
-
+#p_b2{    font-size: 20px!important;}
+.property b{font-size: 20px;}
 .user-description .desc-user .property {
     padding-bottom: 20px;
 }
@@ -3650,8 +3652,8 @@ a.wp:before {
 }
 
 .bas .img-wrapper {
-    float: left;
-    overflow: hidden;
+    float: left;width: 135px;
+    overflow: hidden;    margin-right: 15px;
     max-height: 100px;
 }
 
@@ -5517,8 +5519,7 @@ header .select-wrapper .caret {
     flex-wrap: wrap;
     -ms-align-items: flex-start;
     align-items: flex-start;
-    border-left: 1px solid #c1c1c1;
-    border-right: 1px solid #c1c1c1;
+ 
 }
 
 .basket-shop .basket-string .table .row-string .count span {
@@ -5598,8 +5599,7 @@ header .select-wrapper .caret {
     border: 1px solid #e8e8e8;
     display: none;
     box-shadow: 0 0 20px rgba(204, 204, 204, 0.3);
-    margin-left: 20px;
-}
+     }
 
 .s3 .more-data li {
     border-bottom: 1px solid #efecec;
@@ -5843,7 +5843,7 @@ header .select-wrapper .caret {
 
 .basket-shop .total .select-gift {
     line-height: 16px;
-    padding-left: 15px;
+ 
     font-size: 16px;
     align-items: center;
     padding-top: 15px;
@@ -10951,7 +10951,7 @@ h1.maintitle span {
     font-size: 12px;
     color: #9495A3;
     display: block;
-    line-height: 10px;
+    line-height: 16px;
 }
 
 .add_review_title {
@@ -12679,7 +12679,7 @@ height: 64px;
     white-space: nowrap;
     margin-bottom: 0px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .basket-shop .basket-string .table .row-string .summ p span {
@@ -12734,8 +12734,9 @@ height: 64px;
     margin-right: 10px;
 }
 
- 
-
+.basket-shop .basket-string .table .row-string .total-summ p{    text-align: left;font-size: 20px;
+    margin-left: 17px;}
+.basket-shop .basket-string .table .row-string .total-summ .best-price{    float: right;      margin-right: -32px; margin-top: -30px;}
 .basket-shop .basket-string .table .row-string .total-summ {
     align-content: center;
     display: -webkit-flex;
@@ -12743,7 +12744,7 @@ height: 64px;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
- 
+    background: #ececec;
     padding-top: 10px;
     padding-left: 15px;
     font-weight: 500;
@@ -13923,3 +13924,52 @@ height: 64px;
     font-size: 16px;
     color: #5a5858;
 }
+
+.card_period {
+    margin: auto;
+    margin-top: 40px;
+    background: #eceffeab;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.card_period .card-title {
+    margin-top: 21px;
+    text-align: center;
+    font-size: 26px;
+    color: #5659a7;
+}
+
+.card_period .card_num {
+    font-weight: 500;
+    background: #d1d1df;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 5px 16px;
+    font-size: 22px;
+    color: #5659a7;
+    margin-bottom: 10px;
+    max-width: 288px;
+}
+
+.card_period .red {
+    max-width: 200px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.card_period .btn {
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.count button{    line-height: 30px;    width: 40px!important;
+    border: 1px solid #dddeff;}
+
+    .count .field input{line-height: 53px;
+        height: 40px;}
